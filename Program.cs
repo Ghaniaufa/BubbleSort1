@@ -50,7 +50,7 @@ namespace Bubble_Sort
             Console.WriteLine("");
          }
          public void BubbleSortArray()
-        {
+         {
             for (int i = 1; i < n; i++) //For n-1 passes
             {
                 // Pasa pass i, bandingka n - i elemen pertama dengan elemen selanjutnya
@@ -66,6 +66,20 @@ namespace Bubble_Sort
                     }
                 }
             }
+         }
+         static void Main(string[] args)
+        {
+            //Creating the object of the BubbleSort class
+            Program myList = new Program();
+
+            //Pemanggilan fungsi untuk menerima elemen array
+            myList.read();
+            //Pemanggilan fungsi untuk mengurutkan array
+            myList.BubbleSortArray();
+            //Pemanggilan fungsi untuk menampilkan array yang tersusun
+            myList.display();
+            //Exit
+            Console.WriteLine("\n\nTekan Tombol Apa Saja Untuk Keluar. ");
         }
-    }
+    }   
 }
